@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(96, 56);
+            button1.Location = new Point(71, 51);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -49,15 +51,22 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 1;
+            textBox1.Text = "岸野悠真";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(225, 140);
+            label1.Location = new Point(71, 135);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "label1\r\n";
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 10;
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
@@ -78,5 +87,6 @@
         private Button button1;
         private TextBox textBox1;
         private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
